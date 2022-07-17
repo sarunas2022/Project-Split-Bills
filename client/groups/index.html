@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/style.css" />
+        <script src="./index.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <img src="../styles/logo.png" alt="logo" />
+        </header>
+        <h1>Select Your groups</h1>
+        <div class="no-groups-message"></div>
+        <div class="groups-output"></div>
+
+        <div class="all-groups-output">
+            <h1>Choose from available groups</h1>
+            <div class="available-groups"></div>
+        </div>
+
+        <div class="add-group-wrapper">
+            <div class="group">
+                <h4>Add group</h4>
+                <form class="add-to-group">
+                    <label for="group-id">Group ID</label>
+                    <input
+                        type="number"
+                        name="id"
+                        id="id"
+                        placeholder="Enter group ID to add yourself to The group"
+                    />
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

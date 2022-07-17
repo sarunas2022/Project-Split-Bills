@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/style.css" />
+        <script src="./index.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <img src="../styles/logo.png" alt="logo" />
+        </header>
+        <h1>Group's bills:</h1>
+        <div class="table-wrapper">
+            <div class="seperator">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                    </tr>
+                </table>
+                <table id="tableOutput"></table>
+                <div class="back">
+                    <a href="../groups/index.html">Back to groups</a>
+                </div>
+            </div>
+        </div>
+        <div class="add-bill-wrapper">
+            <div class="bill">
+                <h4>Add bill</h4>
+                <form class="add-bill">
+                    <label for="amount">Amount:</label>
+                    <input
+                        type="number"
+                        name="amount"
+                        id="amount"
+                        step=".01"
+                        placeholder="Enter the amount you spend"
+                    />
+                    <label for="description">Description:</label>
+                    <input
+                        type="text"
+                        name="description"
+                        id="description"
+                        placeholder="Enter the description"
+                    />
+
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
